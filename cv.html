@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Pampa - Impulsa tu negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-scree to-orange-400n">
+    <!-- Sección Empleo -->
+    <section class="py-16 bg-gradient-to-r from-accent to-green-400">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center">
+                <div class="bg-accent text-white rounded-full w-20 h-20 flex items-center justify-center text-4xl mb-6 mx-auto">
+                    💼
+                </div>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">¿Buscas trabajo o necesitas personal?</h3>
+                <p class="text-xl text-gray-600 mb-8">Te conectamos con las mejores oportunidades laborales en La Pampa</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-green-50 rounded-xl p-6">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Para Candidatos</h4>
+                        <p class="text-gray-600 mb-4">Publicaremos tu CV por 7 días de forma completamente gratuita</p>
+                        <div class="text-2xl font-bold text-accent">GRATIS</div>
+                        <p class="text-sm text-gray-500 mt-2">Primeros 7 días sin costo</p>
+                        <div class="top-2 mt-4 right-2 bg-yellow-200 text-red-700 text-xs font-semibold px-3 py-1 rounded-full shadow border border-yellow-400 animate-bounce">Solo vamos a pedirte que nos sigas y compartas.</div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Para Ofertas Laborales</h4>
+                        <p class="text-gray-600 mb-4">Mantén tu oferta con mayor visibilidad</p>
+                        <div class="text-2xl font-bold text-primary">PROXIMAMENTE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add some interactive hover effects
+        document.querySelectorAll('.transform').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

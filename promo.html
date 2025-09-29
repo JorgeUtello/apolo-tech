@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Pampa - Impulsa tu negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-scree to-orange-400n">
+    <!-- Promoción de Bienvenida -->
+    <section class="py-4 bg-gradient-to-r from-secondary to-orange-400">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center transform hover:scale-105 transition-transform">
+                <div class="bg-red-500 text-white text-sm font-bold px-4 py-2 rounded-full inline-block mb-6">
+                    🎉 PROMOCIÓN ESPECIAL
+                </div>
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">¡Promoción de Bienvenida!</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                    Publicita con nosotros <span class="font-bold text-accent">totalmente gratis</span> hasta el 31 de octubre
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <div class="text-3xl mb-3">📸</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Historias Premium</h4>
+                        <p class="text-sm text-gray-600">Tus imágenes o videos compartidos por 20 días completos</p>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6 relative">
+                        <div class="text-3xl mb-3">📱</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Posts Destacados</h4>
+                        <p class="text-sm text-gray-600">Publicaciones de alta visibilidad por 20 días</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-6">
+                        <div class="text-3xl mb-3">🏷️</div>
+                        <h4 class="font-bold text-gray-800 mb-2">Menciones Amplificadas</h4>
+                        <p class="text-sm text-gray-600">Etiquétanos y amplificaremos tu alcance</p>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-300 text-red-700 text-base font-bold px-6 py-3 rounded-full inline-block mb-6 shadow-lg border-2 border-yellow-400 animate-bounce">
+                    Solo vamos a pedirte que nos sigas y compartas.
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-secondary p-4 rounded-r-lg">
+                    <p class="text-sm text-gray-700">
+                        <strong>Importante:</strong> Todas las promociones están sujetas a moderación por nuestro equipo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add some interactive hover effects
+        document.querySelectorAll('.transform').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
